@@ -48,6 +48,10 @@ img {
 .secondary-txt {
   color: var(--under-txt-color);
 }
+
+i {
+  color: #b1b1b1;
+}
 /* CHAT LIST */
 
 /* chatbar */
@@ -60,10 +64,6 @@ img {
   width: 50px;
 }
 
-.chat-icons {
-  color: var(--txt-color);
-}
-
 /* notice alert */
 .notice-alert {
   background-color: var(--alert-msg);
@@ -73,6 +73,16 @@ img {
   color: var(--alert-msg);
   background-color: #eaeaea;
   padding: 10px;
+}
+
+/* searchbar chatlist */
+
+.s-bar {
+  background-color: #fafafa;
+}
+
+.form-control {
+  font-size: 0.75rem;
 }
 
 /* CHAT */
