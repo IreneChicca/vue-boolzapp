@@ -52,6 +52,12 @@ img {
 i {
   color: #b1b1b1;
 }
+
+/*
+DA RIVEDERE LA CLASSE SCROLL PERCHè L'ALTEZZA NON FUNZIONA BENISSIMO
+.scroll {
+  overflow-y: scroll;
+}*/
 /* CHAT LIST */
 
 /* chatbar */
@@ -86,3 +92,21 @@ img {
 }
 
 /* CHAT */
+
+/* MESSAGE BAR */
+
+.chat {
+  position: relative;
+}
+
+.msg-bar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #f3eeea;
+}
+
+.msg-bar i {
+  color: #6a7376;
+}

@@ -32,7 +32,7 @@
     <div id="app" class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
       <!-- chatlist -->
 
-      <div class="col-4">
+      <div class="col-4 bg-white">
         <!-- chatlist chatbar -->
         <div
           class="chatbar d-flex p-2 align-items-center d-flex justify-content-between"
@@ -90,9 +90,11 @@
         </div>
 
         <!-- chatlist contact-list -->
-        <div v-for="(contact,index) in contacts">
+
+        <div class="scroll">
           <div
             class="d-flex justify-content-between p-2 border-bottom bg-white"
+            v-for="(contact,index) in contacts"
           >
             <div class="d-flex">
               <div>
@@ -137,8 +139,23 @@
             <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg"></i>
           </div>
         </div>
-        <div class="border">dd</div>
-        <div class="border">dd</div>
+        <div class="border msg-area">dd</div>
+
+        <div class="msg-bar d-flex align-items-center p-2">
+          <i class="fa-regular fa-face-smile pe-4 ps-3 fa-lg"></i>
+
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Scrivi un messaggio"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+
+          <i class="fa-solid fa-microphone pe-3 ps-4 fa-lg"></i>
+        </div>
       </div>
     </div>
   </body>
