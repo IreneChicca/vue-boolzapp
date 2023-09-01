@@ -18,12 +18,45 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- JS -->
     <script type="text/javascript" src="./js/script.js" defer></script>
+    <!-- FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-page">
     <div class="bg-green"></div>
     <div class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
       <div class="col-4 border">chatlist</div>
-      <div class="col-8 border">chat</div>
+      <div class="col-8 border chat">
+        <div
+          class="border chatname p-2 align-items-center d-flex justify-content-between"
+        >
+          <div class="d-flex">
+            <div>
+              <img
+                src="./img/avatar_1.jpg"
+                alt=""
+                class="border rounded-circle"
+              />
+            </div>
+            <div class="ms-2">
+              <p class="m-0 mt-1">Michele</p>
+              <p class="under-txt m-0">Ultimo accesso ore 12:00</p>
+            </div>
+          </div>
+          <div class="chat-icons">
+            <i class="fa-solid fa-magnifying-glass p-1 fa-lg"></i>
+            <i class="fa-solid fa-paperclip p-1 fa-lg"></i>
+            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg"></i>
+          </div>
+        </div>
+        <div class="border">dd</div>
+        <div class="border">dd</div>
+      </div>
     </div>
   </body>
 </html>

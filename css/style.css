@@ -1,9 +1,19 @@
+:root {
+  --primarycolor: #d8dbd6;
+  --secondarycolor: #009688;
+  --txt-color: #b0b0b0;
+}
+
+img {
+  max-width: 100%;
+}
+
 .bg-page {
-  background-color: #d8dbd6;
+  background-color: var(--primarycolor);
 }
 
 .bg-green {
-  background-color: #009688;
+  background-color: var(--secondarycolor);
   height: 150px;
   position: relative;
 }
@@ -13,4 +23,25 @@
   position: absolute;
   top: 0;
   left: 14%;
+}
+
+.chat {
+}
+
+.chatname {
+  background-color: #eaeaea;
+  height: 70px;
+}
+
+.chatname img {
+  width: 50px;
+}
+
+.under-txt {
+  font-size: 13px;
+  color: var(--txt-color);
+}
+
+.chat-icons {
+  color: var(--txt-color);
 }
