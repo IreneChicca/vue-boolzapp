@@ -1,0 +1,16 @@
+.bg-page {
+  background-color: #d8dbd6;
+}
+
+.bg-green {
+  background-color: #009688;
+  height: 150px;
+  position: relative;
+}
+
+.chat-container {
+  height: calc(100vh - 50px);
+  position: absolute;
+  top: 0;
+  left: 14%;
+}
