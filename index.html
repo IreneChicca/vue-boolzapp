@@ -29,10 +29,10 @@
   </head>
   <body class="bg-page">
     <div class="bg-green"></div>
-    <div id="app" class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
+    <div id="app" class="col-9 m-auto mt-4 chat-container d-flex">
       <!-- chatlist -->
 
-      <div class="col-4 bg-white">
+      <div class="col-4 bg-white alt">
         <!-- chatlist chatbar -->
         <div
           class="chatbar d-flex p-2 align-items-center d-flex justify-content-between"
@@ -50,9 +50,9 @@
             </div>
           </div>
           <div class="chat-icons">
-            <i class="fa-solid fa-circle-notch fa-lg p-1"></i>
-            <i class="fa-solid fa-message p-1 fa-lg"></i>
-            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg"></i>
+            <i class="fa-solid fa-circle-notch fa-lg p-1 pe-2"></i>
+            <i class="fa-solid fa-message p-1 fa-lg pe-2"></i>
+            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg pe-2"></i>
           </div>
         </div>
 
@@ -115,8 +115,8 @@
       </div>
       <!-- chat-->
 
-      <div class="col-8 border chat">
-        <!-- chat chatbar -->
+      <div class="col-8 border chat over">
+        <!-- chat - chatbar -->
         <div
           class="border chatbar p-2 align-items-center d-flex justify-content-between"
         >
@@ -134,13 +134,28 @@
             </div>
           </div>
           <div class="chat-icons">
-            <i class="fa-solid fa-magnifying-glass p-1 fa-lg"></i>
-            <i class="fa-solid fa-paperclip p-1 fa-lg"></i>
-            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg"></i>
+            <i class="fa-solid fa-magnifying-glass p-1 fa-lg pe-2"></i>
+            <i class="fa-solid fa-paperclip p-1 fa-lg pe-2"></i>
+            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg pe-2"></i>
           </div>
         </div>
-        <div class="border msg-area">dd</div>
 
+        <!-- chat - message area -->
+        <div class="border msg-area">
+          <div class="col-10 m-auto pt-5">
+            <div class="p-3 msg mb-2">
+              <p class="m-0">hai fatto la spesa?</p>
+              <p class="msg-time secondary-txt">16:45</p>
+            </div>
+
+            <div class="p-3 msg msg-send mb-2">
+              <p class="m-0">si</p>
+              <p class="msg-time secondary-txt">16:45</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- chat - message bar -->
         <div class="msg-bar d-flex align-items-center p-2">
           <i class="fa-regular fa-face-smile pe-4 ps-3 fa-lg"></i>
 

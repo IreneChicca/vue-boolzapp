@@ -53,11 +53,15 @@ i {
   color: #b1b1b1;
 }
 
-/*
-DA RIVEDERE LA CLASSE SCROLL PERCHè L'ALTEZZA NON FUNZIONA BENISSIMO
 .scroll {
   overflow-y: scroll;
-}*/
+  height: calc(100% - 190px);
+}
+
+.alt {
+  height: 100%;
+}
+
 /* CHAT LIST */
 
 /* chatbar */
@@ -85,6 +89,7 @@ img {
 
 .s-bar {
   background-color: #fafafa;
+  height: 50px;
 }
 
 .form-control {
@@ -109,4 +114,35 @@ img {
 
 .msg-bar i {
   color: #6a7376;
+}
+
+/* MESSAGE AREA */
+
+.msg-area {
+  background-image: url(../img/mine.jpg);
+  height: 100%;
+}
+
+.over {
+  overflow: hidden;
+}
+
+.msg {
+  position: relative;
+  border-radius: 5px;
+  width: 30%;
+  max-width: 40%;
+  background-color: #ffff;
+}
+
+.msg-time {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  font-size: 10px;
+}
+
+.msg-send {
+  background-color: #d5f9ba;
+  margin-left: auto;
 }
