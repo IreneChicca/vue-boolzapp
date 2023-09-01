@@ -29,10 +29,10 @@
   </head>
   <body class="bg-page">
     <div class="bg-green"></div>
-    <div class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
+    <div id="app" class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
       <!-- chatlist -->
 
-      <div class="col-4 border">
+      <div class="col-4">
         <!-- chatlist chatbar -->
         <div
           class="chatbar d-flex p-2 align-items-center d-flex justify-content-between"
@@ -72,7 +72,7 @@
 
         <!-- chatlist searchbar -->
 
-        <div class="p-2 s-bar">
+        <div class="p-2 s-bar border-bottom">
           <div class="input-group">
             <div class="input-group-prepend">
               <button class="btn border bg-white pt-1 pb-1" type="button">
@@ -90,25 +90,27 @@
         </div>
 
         <!-- chatlist contact-list -->
-
-        <div class="d-flex justify-content-between p-2 border bg-white">
-          <div class="d-flex">
-            <div>
-              <img
-                src="./img/avatar_1.jpg"
-                alt=""
-                class="border rounded-circle"
-              />
+        <div v-for="(contact,index) in contacts">
+          <div
+            class="d-flex justify-content-between p-2 border-bottom bg-white"
+          >
+            <div class="d-flex">
+              <div>
+                <img
+                  :src="contact.avatar"
+                  alt=""
+                  class="border rounded-circle"
+                />
+              </div>
+              <div class="ms-2">
+                <p class="m-0 font-bold">{{ contact.name }}</p>
+                <p class="xs-txt secondary-txt m-0">Ultimo messaggio inviato</p>
+              </div>
             </div>
-            <div class="ms-2">
-              <p class="m-0 font-bold">Michele</p>
-              <p class="xs-txt secondary-txt m-0">Ultimo messaggio inviato</p>
-            </div>
+            <div class="xs-txt secondary-txt">12:00</div>
           </div>
-          <div class="xs-txt secondary-txt">12:00</div>
         </div>
       </div>
-
       <!-- chat-->
 
       <div class="col-8 border chat">
