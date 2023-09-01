@@ -143,13 +143,12 @@
         <!-- chat - message area -->
         <div class="border msg-area">
           <div class="col-10 m-auto pt-5">
-            <div class="p-3 msg mb-2">
-              <p class="m-0">hai fatto la spesa?</p>
-              <p class="msg-time secondary-txt">16:45</p>
-            </div>
-
-            <div class="p-3 msg msg-send mb-2">
-              <p class="m-0">si</p>
+            <div
+              class="p-3 msg mb-2"
+              v-for="msg in msgs"
+              :class="(msg.status == 'sent') ? 'msg-send' : ''"
+            >
+              <p class="m-0">{{ msg.message }}</p>
               <p class="msg-time secondary-txt">16:45</p>
             </div>
           </div>
@@ -157,7 +156,7 @@
 
         <!-- chat - message bar -->
         <div class="msg-bar d-flex align-items-center p-2">
-          <i class="fa-regular fa-face-smile pe-4 ps-3 fa-lg"></i>
+          <i class="fa-regular fa-face-smile pe-4 ps-3 ms-2 me-2 fa-lg"></i>
 
           <div class="input-group">
             <input
@@ -169,7 +168,7 @@
             />
           </div>
 
-          <i class="fa-solid fa-microphone pe-3 ps-4 fa-lg"></i>
+          <i class="fa-solid fa-microphone pe-3 ps-4 ms-2 me-2 fa-lg"></i>
         </div>
       </div>
     </div>

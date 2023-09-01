@@ -110,6 +110,7 @@ img {
   right: 0;
   left: 0;
   background-color: #f3eeea;
+  height: 60px;
 }
 
 .msg-bar i {
@@ -121,6 +122,9 @@ img {
 .msg-area {
   background-image: url(../img/mine.jpg);
   height: 100%;
+}
+.msg-bar input {
+  height: 45px;
 }
 
 .over {
