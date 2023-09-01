@@ -1,12 +1,19 @@
+/* GENERALS */
+
 :root {
   --primarycolor: #d8dbd6;
   --secondarycolor: #009688;
-  --txt-color: #b0b0b0;
+  --txt-color: #686868;
+  --under-txt-color: #cccccc;
+  --alert-msg: #8edafc;
 }
 
 img {
   max-width: 100%;
 }
+
+/* UTILITIES */
+/* tutte le regole del background e delle proprietà generali*/
 
 .bg-page {
   background-color: var(--primarycolor);
@@ -25,9 +32,25 @@ img {
   left: 14%;
 }
 
-.chat {
+/* UTILITIES - text properties */
+
+.font-bold {
+  font-weight: 600;
 }
 
+.xs-txt {
+  font-size: 13px;
+}
+
+.txt {
+  color: var(--txt-color);
+}
+.secondary-txt {
+  color: var(--under-txt-color);
+}
+/* CHAT LIST */
+
+/* chatbar */
 .chatbar {
   background-color: #eaeaea;
   height: 70px;
@@ -37,15 +60,19 @@ img {
   width: 50px;
 }
 
-.under-txt {
-  font-size: 13px;
-  color: var(--txt-color);
-}
-
 .chat-icons {
   color: var(--txt-color);
 }
 
-.font-bold {
-  font-weight: 600;
+/* notice alert */
+.notice-alert {
+  background-color: var(--alert-msg);
+  height: 70px;
 }
+.i-bell {
+  color: var(--alert-msg);
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+/* CHAT */
