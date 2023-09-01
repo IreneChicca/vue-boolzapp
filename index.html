@@ -30,10 +30,32 @@
   <body class="bg-page">
     <div class="bg-green"></div>
     <div class="col-9 bg-warning m-auto mt-4 chat-container d-flex">
-      <div class="col-4 border">chatlist</div>
+      <div class="col-4 border">
+        <div
+          class="chatbar d-flex p-2 align-items-center d-flex justify-content-between"
+        >
+          <div class="d-flex align-items-center">
+            <div>
+              <img
+                src="./img/avatar_io.jpg"
+                alt=""
+                class="border rounded-circle"
+              />
+            </div>
+            <div class="ms-2">
+              <p class="m-0 mt-1 font-bold">Sofia</p>
+            </div>
+          </div>
+          <div class="chat-icons">
+            <i class="fa-solid fa-circle-notch fa-lg p-1"></i>
+            <i class="fa-solid fa-message p-1 fa-lg"></i>
+            <i class="fa-solid fa-ellipsis-vertical p-1 fa-lg"></i>
+          </div>
+        </div>
+      </div>
       <div class="col-8 border chat">
         <div
-          class="border chatname p-2 align-items-center d-flex justify-content-between"
+          class="border chatbar p-2 align-items-center d-flex justify-content-between"
         >
           <div class="d-flex">
             <div>
@@ -44,7 +66,7 @@
               />
             </div>
             <div class="ms-2">
-              <p class="m-0 mt-1">Michele</p>
+              <p class="m-0 mt-1 font-bold">Michele</p>
               <p class="under-txt m-0">Ultimo accesso ore 12:00</p>
             </div>
           </div>
