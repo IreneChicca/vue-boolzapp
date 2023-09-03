@@ -162,8 +162,6 @@ const contacts = [
   },
 ];
 
-const msgs = contacts[0].messages;
-
 let activeContact;
 
 const { createApp } = Vue;
@@ -172,12 +170,12 @@ createApp({
   data() {
     return {
       contacts: contacts,
-      msgs: msgs,
+      activeContact: 0,
     };
   },
   methods: {
-    myfun() {
-      alert("ok");
+    selectContact(index) {
+      this.activeContact = index;
     },
   },
 }).mount("#app");

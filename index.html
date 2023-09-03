@@ -95,6 +95,7 @@
           <div
             class="d-flex justify-content-between p-2 border-bottom bg-white"
             v-for="(contact,index) in contacts"
+            @click="selectContact(index)"
           >
             <div class="d-flex">
               <div>
@@ -143,9 +144,10 @@
         <!-- chat - message area -->
         <div class="border msg-area">
           <div class="col-10 m-auto pt-5">
+            <!-- prova -->
             <div
               class="p-3 msg mb-2"
-              v-for="msg in msgs"
+              v-for="(msg,index) in contacts[activeContact].messages"
               :class="(msg.status == 'sent') ? 'msg-send' : ''"
             >
               <p class="m-0">{{ msg.message }}</p>
