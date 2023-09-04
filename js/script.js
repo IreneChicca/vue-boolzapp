@@ -187,6 +187,16 @@ createApp({
       };
       this.contacts[this.activeContact].messages.push(msgToAdd);
       this.newMsg = "";
+      setTimeout(this.autoMsg, 1000);
+    },
+
+    autoMsg() {
+      const autoMsg = {
+        date: "10/01/2020 15:30:55",
+        message: "ok",
+        status: "received",
+      };
+      this.contacts[this.activeContact].messages.push(autoMsg);
     },
   },
 }).mount("#app");
