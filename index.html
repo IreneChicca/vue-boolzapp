@@ -84,6 +84,8 @@
               placeholder="Cerca o inizia nuova chat"
               aria-label=""
               aria-describedby="basic-addon1"
+              v-model="searchContact"
+              @keyUp="showContact()"
             />
           </div>
         </div>
@@ -95,6 +97,7 @@
             class="d-flex justify-content-between p-2 border-bottom bg-white"
             v-for="(contact,index) in contacts"
             @click="selectContact(index)"
+            :class="contact.visible ? '' : 'd-none'"
           >
             <div class="d-flex">
               <div>
@@ -145,13 +148,14 @@
         <!-- chat - message area -->
         <div class="border msg-area">
           <div class="col-10 m-auto pt-5">
-            <!-- prova -->
+            <!-- message -->
             <div
               class="p-3 msg mb-2"
               v-for="(msg,index) in contacts[activeContact].messages"
               :class="(msg.status == 'sent') ? 'msg-send' : ''"
             >
               <p class="m-0">{{ msg.message }}</p>
+
               <p class="msg-time secondary-txt">16:45</p>
             </div>
           </div>

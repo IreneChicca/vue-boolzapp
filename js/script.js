@@ -172,6 +172,7 @@ createApp({
       contacts: contacts,
       activeContact: 0,
       newMsg: "",
+      searchContact: "",
     };
   },
   methods: {
@@ -197,6 +198,18 @@ createApp({
         status: "received",
       };
       this.contacts[this.activeContact].messages.push(autoMsg);
+    },
+    // usare l'includes?????
+    showContact() {
+      this.contacts.forEach((contact) => {
+        if (
+          contact.name.toLowerCase().includes(this.searchContact.toLowerCase())
+        ) {
+          contact.visible = true;
+        } else {
+          contact.visible = false;
+        }
+      });
     },
   },
 }).mount("#app");
