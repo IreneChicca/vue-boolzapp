@@ -15,21 +15,13 @@ img {
 /* UTILITIES */
 /* tutte le regole del background e delle proprietà generali*/
 
-.bg-page {
-  background-color: var(--primarycolor);
-}
-
-.bg-green {
-  background-color: var(--secondarycolor);
-  height: 150px;
-  position: relative;
+body {
+  background-image: linear-gradient(to bottom, #009688 10vh, #d8dbd6 10vh);
+  height: 100vh;
 }
 
 .chat-container {
   height: calc(100vh - 50px);
-  position: absolute;
-  top: 0;
-  left: 14%;
 }
 
 /* UTILITIES - text properties */
@@ -128,7 +120,7 @@ img {
 }
 
 .over {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .msg {

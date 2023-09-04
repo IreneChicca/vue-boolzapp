@@ -171,11 +171,22 @@ createApp({
     return {
       contacts: contacts,
       activeContact: 0,
+      newMsg: "",
     };
   },
   methods: {
     selectContact(index) {
       this.activeContact = index;
+    },
+
+    addNewMsg() {
+      const msgToAdd = {
+        date: "10/01/2020 15:30:55",
+        message: this.newMsg,
+        status: "sent",
+      };
+      this.contacts[this.activeContact].messages.push(msgToAdd);
+      this.newMsg = "";
     },
   },
 }).mount("#app");

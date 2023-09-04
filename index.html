@@ -27,8 +27,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-page">
-    <div class="bg-green"></div>
+  <body>
     <div id="app" class="col-9 m-auto mt-4 chat-container d-flex">
       <!-- chatlist -->
 
@@ -169,6 +168,8 @@
               placeholder="Scrivi un messaggio"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              v-model="newMsg"
+              @keyUp.Enter="addNewMsg()"
             />
           </div>
 
